@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="QTium">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.logigear.testng.QTiumMethodListener"/>
+		<listener class-name="com.logigear.testng.QTiumTestListener"/>
+	</listeners>
+	<test name="Selenium - TestNG - QtiumDashboard - iOS Safari" >	
+		<!-- Platform: windows,android,ios -->
+		<parameter name="platform" value="ios">
+			<!-- browser: + window: Chrome, Firefox, Ie
+						  + android: Browser, Chrome
+			              + ios: Safari
+	        -->
+			<browser>Safari</browser>
+			<remoteaddress>http://192.168.190.241:4723/wd/hub</remoteaddress>			
+		</parameter> 
+		<parameter name ="grid" value="0" >
+			<ip>192.168.191.xxx</ip>
+			<port>4444</port>
+		</parameter>
+<!-- 	<groups>
+		    <run>
+		      <include name="group 2"/>
+		    </run>
+  		</groups> -->
+		<classes>
+			 <class name="ScrumBoard.FunctionalTests.QTiumDemo">
+				 <methods>
+<!-- 					 <include name="TC001_Sign_In_Layout"></include> -->
+<!-- 					 <include name="TC002_Remember_Me_checkbox"></include> -->
+<!-- 					 <include name="TC003_User_cannot_sign_in_with_invalid_credentials"></include> -->
+<!-- 					 <include name="TC004_Sign_in_successfully_with_valid_credentials"></include> -->
+					 <include name="TC005_Create_Issue_Layout"></include>
+					 <include name="TC006_Create_issue_with_invalid_inputs_for_required_fields"></include>
+					 <include name="TC007_Create_issue_with_valid_inputs_for_required_fields_successfully"></include>
+<!-- 					 <include name="TC008_User_can_edit_existing_issue_successfully"></include> -->
+<!-- 					 <include name="TC009_User_can_delete_existing_issue_successfully"></include> -->
+				 </methods>
+			 </class>
+		</classes>
+	</test>	
+</suite> 

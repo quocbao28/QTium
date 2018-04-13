@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="QTium">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.logigear.testng.QTiumMethodListener"/>
+		<listener class-name="com.logigear.testng.QTiumTestListener"/>
+	</listeners>
+	<test name="Selenium - TestNG - QtiumDashboard - Chrome" >	
+		<!-- Platform: windows,android,ios -->
+		<parameter name="platform" value="windows">
+			<!-- browser: + window: Chrome, Firefox, Ie
+						  + android: Browser, Chrome
+			              + ios: Safari
+	        -->
+			<browser>Chrome</browser>
+			<remoteaddress>http://192.168.190.241:4723/wd/hub</remoteaddress>			
+		</parameter> 
+		<parameter name ="grid" value="0" >
+			<ip>192.168.191.xxx</ip>
+			<port>4444</port>
+		</parameter>
+<!-- 	<groups>
+		    <run>
+		      <include name="group 2"/>
+		    </run>
+  		</groups> -->
+		<classes>
+			 <class name="QTiumDashboard.FunctionalTests.SmokeTest" />
+		</classes>
+	</test>	
+		<test name="Selenium - TestNG - QtiumDashboard - FireFox" >	
+		<!-- Platform: windows,android,ios -->
+		<parameter name="platform" value="windows">
+			<!-- browser: + window: Chrome, Firefox, Ie
+						  + android: Browser, Chrome
+			              + ios: Safari
+	        -->
+			<browser>FireFox</browser>
+			<remoteaddress>http://192.168.190.241:4723/wd/hub</remoteaddress>			
+		</parameter> 
+		<parameter name ="grid" value="0" >
+			<ip>192.168.191.xxx</ip>
+			<port>4444</port>
+		</parameter>
+<!-- 	<groups>
+		    <run>
+		      <include name="group 2"/>
+		    </run>
+  		</groups> -->
+		<classes>
+			 <class name="QTiumDashboard.FunctionalTests.SmokeTest" />
+		</classes>
+	</test>	
+		<test name="Selenium - TestNG - QtiumDashboard - IE" >	
+		<!-- Platform: windows,android,ios -->
+		<parameter name="platform" value="windows">
+			<!-- browser: + window: Chrome, Firefox, Ie
+						  + android: Browser, Chrome
+			              + ios: Safari
+	        -->
+			<browser>IE</browser>
+			<remoteaddress>http://192.168.190.241:4723/wd/hub</remoteaddress>			
+		</parameter> 
+		<parameter name ="grid" value="0" >
+			<ip>192.168.191.xxx</ip>
+			<port>4444</port>
+		</parameter>
+<!-- 	<groups>
+		    <run>
+		      <include name="group 2"/>
+		    </run>
+  		</groups> -->
+		<classes>
+			 <class name="QTiumDashboard.FunctionalTests.SmokeTest" />
+		</classes>
+	</test>	
+</suite> 

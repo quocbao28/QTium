@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="ScrumBoard.FunctionalTests.QTiumDemo">
+        <methods>
+          <include name="TC007_Create_issue_with_valid_inputs_for_required_fields_successfully"/>
+          <include name="TC004_Sign_in_successfully_with_valid_credentials"/>
+          <include name="tear_down"/>
+          <include name="TC009_User_can_delete_existing_issue_successfully"/>
+          <include name="TC005_Create_Issue_Layout"/>
+          <include name="TC001_Sign_In_Layout"/>
+          <include name="TC003_User_cannot_sign_in_with_invalid_credentials"/>
+          <include name="set_up"/>
+          <include name="after_test_case_execution"/>
+          <include name="TC008_User_can_edit_existing_issue_successfully"/>
+          <include name="TC002_Remember_Me_checkbox"/>
+          <include name="TC006_Create_issue_with_invalid_inputs_for_required_fields"/>
+        </methods>
+      </class> <!-- ScrumBoard.FunctionalTests.QTiumDemo -->
+      <class name="NativeMac.FunctionalTests.NativeAppDemo">
+        <methods>
+          <include name="TC002_Minus_Function"/>
+          <include name="tear_down"/>
+          <include name="after_test_case_execution"/>
+          <include name="set_up"/>
+          <include name="TC004_Division_Function"/>
+          <include name="TC003_Multi_Function"/>
+          <include name="TC001_Plus_Function"/>
+        </methods>
+      </class> <!-- NativeMac.FunctionalTests.NativeAppDemo -->
+      <class name="FptShop.FunctionalTests.QTiumDemo">
+        <methods>
+          <include name="set_up"/>
+          <include name="TC002_Order_Item_By_Category"/>
+          <include name="TC003_Pre_Order_Item_By_Category_Banner"/>
+          <include name="tear_down"/>
+          <include name="TC004_Installment_Buying"/>
+          <include name="TC001_Order_Item_By_Searching"/>
+        </methods>
+      </class> <!-- FptShop.FunctionalTests.QTiumDemo -->
+      <class name="ScrumBoard.iOS.FunctionalTests.QTiumDemo">
+        <methods>
+          <include name="set_up"/>
+          <include name="tear_down"/>
+          <include name="TC009_User_can_delete_existing_issue_successfully"/>
+          <include name="TC003_User_cannot_sign_in_with_invalid_credentials"/>
+          <include name="TC005_Create_Issue_Layout"/>
+          <include name="TC002_Remember_Me_checkbox"/>
+          <include name="TC001_t"/>
+          <include name="TC007_Create_issue_with_valid_inputs_for_required_fields_successfully"/>
+          <include name="TC008_User_can_edit_existing_issue_successfully"/>
+          <include name="TC004_Sign_in_successfully_with_valid_credentials"/>
+          <include name="TC006_Create_issue_with_invalid_inputs_for_required_fields"/>
+          <include name="after_test_case_execution"/>
+          <include name="TC001_Sign_In_Layout"/>
+        </methods>
+      </class> <!-- ScrumBoard.iOS.FunctionalTests.QTiumDemo -->
+      <class name="ScrumBoard.Android.FunctionalTests.QTiumDemo">
+        <methods>
+          <include name="TC003_User_cannot_sign_in_with_invalid_credentials"/>
+          <include name="tear_down"/>
+          <include name="TC005_Create_Issue_Layout"/>
+          <include name="TC006_Create_issue_with_invalid_inputs_for_required_fields"/>
+          <include name="TC007_Create_issue_with_valid_inputs_for_required_fields_successfully"/>
+          <include name="after_test_case_execution"/>
+          <include name="TC008_User_can_edit_existing_issue_successfully"/>
+          <include name="TC009_User_can_delete_existing_issue_successfully"/>
+          <include name="set_up"/>
+          <include name="TC001_Sign_In_Layout"/>
+          <include name="TC004_Sign_in_successfully_with_valid_credentials"/>
+        </methods>
+      </class> <!-- ScrumBoard.Android.FunctionalTests.QTiumDemo -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

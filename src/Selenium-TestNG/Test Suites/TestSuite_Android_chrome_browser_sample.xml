@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" > -->
+<!DOCTYPE suite SYSTEM "QTium.dtd" >
+
+<suite name="QTium">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.logigear.testng.QTiumMethodListener"/>
+		<listener class-name="com.logigear.testng.QTiumTestListener"/>
+	</listeners>
+	<test name="Selenium - TestNG">
+		<parameter name="device" value="android">	
+			<provider name="selenium" apptype="chrome">
+				<remoteaddress>http://192.168.190.214:4723/wd/hub</remoteaddress>
+			</provider>
+		</parameter>
+		
+		<parameter name ="grid" value="0">		
+			<ip>192.168.191.72</ip>
+			<port>4444</port>
+		</parameter>
+		
+		<classes>
+			 <class name="ScrumBoard.FunctionalTests.QTiumDemo">
+			 </class>
+		</classes>
+	</test>	
+</suite> 

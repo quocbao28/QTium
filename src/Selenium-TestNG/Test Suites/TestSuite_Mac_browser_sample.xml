@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- <suite name="QTium" parallel="tests" thread-count="5"> -->
+<suite name="QTium">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="com.logigear.testng.QTiumMethodListener" />
+		<listener class-name="com.logigear.testng.QTiumTestListener" />
+		<listener class-name="com.logigear.testng.QTiumTestSuiteListener" />
+	</listeners>
+
+	<parameter name="log4j" value="true" />
+
+	<test name="Selenium - TestNG - Safari on Mac">
+		<parameter name="device" value="mac">
+			<provider name="selenium" apptype="safari">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>192.168.191.72</ip>
+			<port>4444</port>
+		</parameter>
+
+		<classes>
+			<class name="ScrumBoard.FunctionalTests.QTiumDemo">
+				<methods>
+					<exclude name=""></exclude>
+					<include name="TC001_Sign_In_Layout"></include>
+					<include name="TC002_Remember_Me_checkbox"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Selenium - TestNG - Chrome on Mac">
+		<parameter name="device" value="mac">
+			<provider name="selenium" apptype="chrome">
+				<driverexe>[Path to chrome driver]/chromedriver</driverexe>
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>192.168.191.72</ip>
+			<port>4444</port>
+		</parameter>
+
+		<classes>
+			<class name="ScrumBoard.FunctionalTests.QTiumDemo" />
+		</classes>
+	</test>
+
+	<test name="Selenium - TestNG - FireFox on Mac">
+		<parameter name="device" value="mac">
+			<provider name="selenium" apptype="firefox">
+			</provider>
+		</parameter>
+
+		<parameter name="grid" value="0">
+			<ip>192.168.191.72</ip>
+			<port>4444</port>
+		</parameter>
+
+		<classes>
+			<class name="ScrumBoard.FunctionalTests.QTiumDemo" />
+		</classes>
+	</test>
+</suite> 
