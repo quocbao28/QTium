@@ -11,13 +11,17 @@
 	<classpathentry kind="lib" path="Libs/org.testng.eclipse_6.2.0.20110905_0934.jar"/>
 	<classpathentry kind="lib" path="Libs/reportng-1.1.4.jar"/>
 	<classpathentry kind="lib" path="Libs/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="Libs/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="Libs/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="Libs/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="Libs/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="Libs/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="Libs/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="Libs/java-client-1.4.0.jar"/>
 	<classpathentry kind="lib" path="Libs/selenium-java-2.42.2.jar" sourcepath="C:/Users/phuc.thai/Downloads/selenium-3b5eb8dc6687"/>
 	<classpathentry kind="lib" path="Libs/selenium-server-standalone-2.42.2.jar"/>
 	<classpathentry kind="lib" path="Libs/gson-2.2.4.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/QTium"/>
-	<classpathentry kind="lib" path="/Users/nguyentiendat/Downloads/extentreports-java-2.41.2/extentreports-2.41.2.jar"/>
-	<classpathentry kind="lib" path="/Users/nguyentiendat/Downloads/extentreports-java-2.41.2/lib/freemarker-2.3.23.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
